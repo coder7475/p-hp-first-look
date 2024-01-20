@@ -39,5 +39,21 @@
             PHP automatically associates a data type to the variable, depending on its value. <br> Since the data types are not set in a strict sense, <br> you can do things like adding a string to an integer without causing an error.
         </p>
     </section>
+
+    <section>
+        <h2>Data Types</h2>
+        <p>PHP supports the following data types:</p>
+        <ol>
+            <li>String</li>
+            <li>Integer</li>
+            <li>Float</li>
+            <li>Boolean</li>
+            <li>Array</li>
+            <li>Object</li>
+            <li>NULL</li>
+            <li>Resources</li>
+        </ol>
+    </section>
+    
 </body>
 </html>
