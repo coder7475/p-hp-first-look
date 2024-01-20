@@ -8,8 +8,8 @@
 </head>
 
 <body>
+    <h1>Variables are "containers" for storing information.</h1>
     <section>
-        <h1>Variables are "containers" for storing information.</h1>
         <h2>Creating (Declaring) PHP Variables</h2>
         <p>In PHP, a variable starts with the <b>$</b> sign, followed by the name of the variable: </p>
         <?php
@@ -33,6 +33,11 @@
             <li>Variable names are <b>case-sensitive</b></li>
         </ul>
     </section>
+    <section>
+        <h2>PHP is a Loosely Typed Language</h2>
+        <p>
+            PHP automatically associates a data type to the variable, depending on its value. <br> Since the data types are not set in a strict sense, <br> you can do things like adding a string to an integer without causing an error.
+        </p>
+    </section>
 </body>
-
 </html>
