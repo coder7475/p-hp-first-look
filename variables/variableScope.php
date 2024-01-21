@@ -66,7 +66,8 @@
 
     <section>
         <h2>PHP The global Keyword</h2>
-        <p>The <i>global</i> Keyword is used access global variable from within a function. To do this, use the global keyword before the variable(inside a function).</p>
+        <p>The <i>global</i> Keyword is used access global variable from within a function. To do this, use the global
+            keyword before the variable(inside a function).</p>
     </section>
 
     <h5>PHP example</h5>
@@ -74,7 +75,8 @@
     $m = 5;
     $n = 10;
 
-    function globalTest() {
+    function globalTest()
+    {
         global $m, $n;
         $n = $m + $n;
     }
@@ -83,14 +85,17 @@
     ?>
 
     <h3>$GLOBAL[index]</h3>
-    <p>PHP also stores all global variables in an array called <i>$GLOBAL[index]</i>. The <i>index</i> holds the name of the variable. This is also accessible from within functions and can be used to update global variables direcly.</p>
+    <p>PHP also stores all global variables in an array called <i>$GLOBAL[index]</i>. The <i>index</i> holds the name of
+        the variable. This is also accessible from within functions and can be used to update global variables direcly.
+    </p>
 
     <h5>PHP example</h5>
-    <?php 
+    <?php
     $p = 5;
     $q = 10;
 
-    function globalCall() {
+    function globalCall()
+    {
         $GLOBALS['q'] = $GLOBALS['p'] + $GLOBALS['q'];
     }
 
@@ -98,6 +103,30 @@
     echo "<br>";
     globalCall();
     echo $q;
+
+    ?>
+
+    <section>
+        <h2>PHP The static Keyword</h2>
+        <p>The <i>static</i> Keyword is used before a variable to keep the value of a local variable in memory. Because normally when a function is completed/executed, all of its variables are deleted.</p>
+    </section>
+
+    <h5>PHP example</h5>
+    <?php 
+    function staticCall() {
+        static $x = 0;
+        echo $x;
+        $x++;
+    }
+
+    staticCall();
+    echo "<br>";
+
+    staticCall();
+    echo "<br>";
+
+    staticCall();
+    echo "<br>";
 
     ?>
 </body>
