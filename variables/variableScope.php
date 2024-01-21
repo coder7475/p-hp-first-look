@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Scope of Variables</title>
 </head>
 
@@ -23,19 +24,44 @@
         </ul>
     </section>
     <br>
+
     <section>
-        <?php 
-        $x = 5; // global scope
-
-        function myTest(  ) { 
-            // using x inside this function will generate an error
-            echo "<p>Variable x is inside function is: $x</p>";
-        }
-
-        myTest();
-        echo "<p>Variable x is inside function is: $x</p>";
-        ?>
+        <h2>Global Scope</h2>
+        <p>A variable declared outside a function has <i>Global Scope</i> and can only be accessed outside a function.</p>
     </section>
+    <!-- global scope php exmaple -->
+    <h5>PHP exmaple</h5>
+    <?php
+    $x = 5; // global scope
+    
+    function myTest()
+    {
+        // using x inside this function will generate an error
+        // echo "<p>Variable x is inside function is: $x</p>";
+        echo "x can't accessd Inside function!!";
+    }
+
+    myTest();
+    echo "<p>Variable x is inside function is: $x</p>";
+    ?>
+
+    <section>
+        <h2>Local Scope</h2>
+        <p>A variable declared <strong>within</strong> a function has a <i>Local Scope</i> and can only be accessed within that function.</p>
+    </section>
+
+    <h5>PHP exmaple</h5>
+    <?php 
+    function localTest() {
+        $y = 5; // local scope
+        echo "<p>Variable x is inside function is: $y</p>";        
+    }
+    localTest();
+    // using y outside the function will generate an error
+    // echo "<p>Variable y is outside function is: $y</p>";  
+    ?>
+
+
 </body>
 
 </html>
