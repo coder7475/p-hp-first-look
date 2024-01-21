@@ -5,4 +5,5 @@
 - Sass is completely compatiable with all version of CSS
 
 # Why Use Sass?
-- Sass 
+- Sass reduces repetition of CSS and therefore saves time
+- Sass lets us use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.
