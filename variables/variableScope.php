@@ -81,6 +81,25 @@
     globalTest();
     echo "Accessing n from within a function $n";
     ?>
+
+    <h3>$GLOBAL[index]</h3>
+    <p>PHP also stores all global variables in an array called <i>$GLOBAL[index]</i>. The <i>index</i> holds the name of the variable. This is also accessible from within functions and can be used to update global variables direcly.</p>
+
+    <h5>PHP example</h5>
+    <?php 
+    $p = 5;
+    $q = 10;
+
+    function globalCall() {
+        $GLOBALS['q'] = $GLOBALS['p'] + $GLOBALS['q'];
+    }
+
+    echo $q;
+    echo "<br>";
+    globalCall();
+    echo $q;
+
+    ?>
 </body>
 
 </html>
