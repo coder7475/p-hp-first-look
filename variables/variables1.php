@@ -54,6 +54,39 @@
             <li>Resources</li>
         </ol>
     </section>
-    
+
+    <section>
+        <h2>Get the Type</h2>
+        <p>To get the data type of a variable, use the <b>var_dump()</b> function.</p>
+        <?php
+        $x = 5;
+        var_dump($x);
+        var_dump(5);
+        var_dump("John");
+        var_dump(3.14);
+        var_dump(true);
+        var_dump([2, 3, 56]);
+        var_dump(NULL);
+        ?>
+    </section>
+
+    <section>
+        <h2>Assign String to a Variable</h2>
+        <p>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:</p>
+        <?php
+        # Assign Signle Value
+            $x = 5;
+            echo $x;
+        # Assign Multiple Values
+            echo "<br>";
+            $x = $y = $z = "Fruit";
+            echo $x;
+            echo "<br>";
+            echo $y;
+            echo "<br>";
+            echo $z;
+        ?>
+    </section>
 </body>
+
 </html>
