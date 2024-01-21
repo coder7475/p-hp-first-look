@@ -27,7 +27,8 @@
 
     <section>
         <h2>Global Scope</h2>
-        <p>A variable declared outside a function has <i>Global Scope</i> and can only be accessed outside a function.</p>
+        <p>A variable declared outside a function has <i>Global Scope</i> and can only be accessed outside a function.
+        </p>
     </section>
     <!-- global scope php exmaple -->
     <h5>PHP exmaple</h5>
@@ -47,21 +48,39 @@
 
     <section>
         <h2>Local Scope</h2>
-        <p>A variable declared <strong>within</strong> a function has a <i>Local Scope</i> and can only be accessed within that function.</p>
+        <p>A variable declared <strong>within</strong> a function has a <i>Local Scope</i> and can only be accessed
+            within that function.</p>
     </section>
 
     <h5>PHP exmaple</h5>
-    <?php 
-    function localTest() {
+    <?php
+    function localTest()
+    {
         $y = 5; // local scope
-        echo "<p>Variable x is inside function is: $y</p>";        
+        echo "<p>Variable x is inside function is: $y</p>";
     }
     localTest();
     // using y outside the function will generate an error
     // echo "<p>Variable y is outside function is: $y</p>";  
     ?>
 
+    <section>
+        <h2>PHP The global Keyword</h2>
+        <p>The <i>global</i> Keyword is used access global variable from within a function. To do this, use the global keyword before the variable(inside a function).</p>
+    </section>
 
+    <h5>PHP example</h5>
+    <?php
+    $m = 5;
+    $n = 10;
+
+    function globalTest() {
+        global $m, $n;
+        $n = $m + $n;
+    }
+    globalTest();
+    echo "Accessing n from within a function $n";
+    ?>
 </body>
 
 </html>
