@@ -144,6 +144,24 @@
        ?>
     </section>
 
+    <section>
+       <h2>Change Data Type</h2> 
+       <p>Assigning an integer value to a variable, the type will automatically be an integer.</p>
+       <p>If you assign a string to the same variable, the type will change will change to a string:</p>
+       <?php 
+       $x = 5;
+       var_dump($x);
+       $x = "Hello";
+       var_dump($x);
+       ?>
+       <h2>Type Casting</h2>
+       <p>Changing by type casting:</p>
+       <?php 
+       $x = 5;
+       $x = (string) $x;
+       var_dump($x);
+       ?>
+    </section>
 </body>
 
 </html>
