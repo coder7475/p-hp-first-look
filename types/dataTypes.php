@@ -56,6 +56,34 @@
         var_dump($y);        
         ?>
     </section>
+
+    <section>
+        <h2>PHP Integer</h2>
+        <p>An integer data type is a non-decimal number between /section>
+            -2,147,483,648 and 2,147,483,647
+        </p>
+        <p>Rules for integers:</p>
+        <ul>
+            <li>An integer must have at least one digit.</li>
+            <li>An integer must not have a decimal point</li>
+            <li>An integer can be either positive or negative</li>
+            <li>Integers can be specified in:
+                <ol>
+                    <li>decimal (base 10)</li>
+                    <li>hexadecimal (base 16)</li>
+                    <li>octal (base 8)</li>
+                    <li>binary (base 2)</li>
+                </ol>
+                notation.
+            </li>
+        </ul>
+       <p>Data Type:</p>
+        <?php 
+        $x = 5985;
+        var_dump($x);
+        ?>
+    </section>
+
 </body>
 
 </html>
