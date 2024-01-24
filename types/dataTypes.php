@@ -112,6 +112,20 @@
         ?>
         <p>Booleans are often used in conditional testing.</p>
     </section>
+
+    <section>
+        <h2>PHP Array</h2>
+        <p>An array stores multiple values in one single variable.</p>
+        <p>In the following example 
+            <strong>$cars</strong> is an array. The PHP <strong>var_dump()</strong>
+            function returns the data type and value:
+        </p>
+        <?php 
+        $cars = array("Volvo", "BMW", "Toyota");
+        echo $cars[0] . "<br>";
+        var_dump($cars);
+        ?>
+    </section>
 </body>
 
 </html>
