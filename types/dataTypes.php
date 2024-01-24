@@ -84,6 +84,34 @@
         ?>
     </section>
 
+    <section>
+        <h2>PHP Float</h2>
+        <p>A float is a number with decimal point or a number in exponential form.</p>
+        <p>In the following example 
+            <strong>$x</strong> is a float.
+            <br>
+            The PHP <strong>var_dump()</strong>function
+            returns the data type and value: 
+            <br>
+            <?php 
+            $x = 10.354;
+            var_dump($x);
+            ?>
+        </p>
+    </section>
+
+    <section>
+        <h2>PHP Boolean</h2>
+        <p>A Boolean represents two possible states:
+            <strong>TRUE</strong> or <strong>FALSE</strong>
+        </p>
+        <h3>Example</h3>
+        <?php 
+        $x = true;
+        var_dump($x);
+        ?>
+        <p>Booleans are often used in conditional testing.</p>
+    </section>
 </body>
 
 </html>
