@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Scope of Variables</title>
 </head>
 
@@ -108,12 +107,14 @@
 
     <section>
         <h2>PHP The static Keyword</h2>
-        <p>The <i>static</i> Keyword is used before a variable to keep the value of a local variable in memory. Because normally when a function is completed/executed, all of its variables are deleted.</p>
+        <p>The <i>static</i> Keyword is used before a variable to keep the value of a local variable in memory. Because
+            normally when a function is completed/executed, all of its variables are deleted.</p>
     </section>
 
     <h5>PHP example</h5>
-    <?php 
-    function staticCall() {
+    <?php
+    function staticCall()
+    {
         static $x = 0;
         echo $x;
         $x++;
