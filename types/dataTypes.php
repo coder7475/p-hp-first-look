@@ -126,6 +126,24 @@
         var_dump($cars);
         ?>
     </section>
+
+    <section>
+       <h2>PHP NULL Value</h2>
+       <p>Null is a special data type which can have only one value: NULL</p>
+       <p>A variable of data type NULL is a variable that has no value assigned to it.</p>
+       <p>
+        <strong>Tip:</strong> If a variable is created without a value, it is automatically assigned a value of NULL.
+       </p>
+       <p>Variable can also be emptied by setting the value to NULL</p>
+       <?php 
+       $m = "Hello world!";
+       var_dump($m);
+       echo "<br>";
+       $m = null;
+       var_dump($m);
+       ?>
+    </section>
+
 </body>
 
 </html>
