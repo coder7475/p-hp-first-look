@@ -46,5 +46,14 @@
         echo strlen("Hello $x");
         ?>
     </section>
+
+    <section>
+        <h2>Word Count</h2>
+        <p>The PHP <strong>str_word_count()</strong> function counts the number of words in a string.</p>
+        <?php 
+        echo "Count of words in 'Hello World': ";
+        echo str_word_count("Hello World!");
+        ?>
+    </section>
 </body>
 </html>
