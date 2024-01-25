@@ -55,5 +55,17 @@
         echo str_word_count("Hello World!");
         ?>
     </section>
+
+    <section>
+        <h2>Search For Text Within a String</h2>
+        <p>The PHP strpos() function searches for a specific text within a string.</p>
+        <p>If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.</p>
+        <?php 
+        $txt = "Hello world!";
+        $wrd = "world";
+        echo "$wrd in '$txt': ";
+        echo strpos($txt, $wrd);
+        ?>
+    </section>    
 </body>
 </html>
