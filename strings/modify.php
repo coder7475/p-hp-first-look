@@ -44,5 +44,27 @@
         echo strrev($x);
         ?>
     </section>
+
+    <section>0
+        <h2>Remove WhiteSpace</h2>
+        <p>Thr trim() removes any whitespace from the begining or the end:</p>
+        <?php 
+        $x = " Hello World! "
+        ?>
+    </section>
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
