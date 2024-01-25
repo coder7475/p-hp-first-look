@@ -49,21 +49,24 @@
         <h2>Remove WhiteSpace</h2>
         <p>Thr trim() removes any whitespace from the begining or the end:</p>
         <?php 
-        $x = " Hello World! "
+        $x = " Hello World! ";
+        echo trim($x);
         ?>
     </section>
 
     
 
-    
-
-
-
-
-
-
-
-
+    <section>
+        <h2>Convert String into Array</h2>
+        <p>The PHP <strong>explode(seperator, string)</strong> function splits a string into an array.</p>
+        <p></p>
+        <?php 
+        $x = "Hello World!";
+        // echo $x;
+        $y = explode(" ", $x);
+        print_r($y);
+        ?>
+    </section>
 
 
 </body>
