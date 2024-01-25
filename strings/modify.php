@@ -35,5 +35,14 @@
         ?>
     </section>
 
+    <section>
+        <h2>Reverse a String</h2>
+        <p>The PHP <strong>strrev()</strong> function reverses a string.</p>
+        <h5>Example</h5>
+        <?php 
+        echo "Reverse of $x: ";
+        echo strrev($x);
+        ?>
+    </section>
 </body>
 </html>
