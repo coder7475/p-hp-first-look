@@ -25,5 +25,15 @@
         ?>
     </section>
 
+    <section>
+        <h2>Replace String</h2>
+        <p>The PHP <strong>str_replace()</strong> function replaces some characters with some other characters in a string.</p>
+        <h5>Example</h5>
+        <?php 
+        echo "Replace the text 'World' with 'Dolly': ";
+        echo str_replace("World", "Dolly", $x);
+        ?>
+    </section>
+
 </body>
 </html>
