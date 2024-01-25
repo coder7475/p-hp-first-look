@@ -69,5 +69,52 @@
     </section>
 
 
+    <section>
+        <h2>String Concatenation</h2>
+        <p>To concatenate, or combine, two strings use <strong>.</strong> operator.</p>
+        <?php 
+        $x = "Hello";
+        $y = "World";
+        $z = $x . " " . $y;
+        echo $z;
+        echo "<br>";
+        $z = "$x $y";
+        echo $z;
+        ?>
+    </section>
+
+    <section>
+        <h2>Slicing</h2>
+        <p><strong>substr(string, startIndex, numberOfCharacters(length))</strong> - returns a range of characters.</p>
+        <?php 
+        echo substr($z, 6, 5);
+        ?>
+        <h2>Slice to the End</h2>
+        <p>
+        <strong>substr(string, startIndex)</strong> without length the range will go to end:
+        
+        </p>
+        <?php 
+        echo substr($z, 6);
+        ?>
+        <h2>Slice <i>From</i> the End</h2>
+        <p>Use negative indexes to start the slice from the end of the string: last character has index -1</p>
+        <h5>Example</h5>
+        <p>Get the 3 characters, starting from the "o" in the world (index -5)</p>
+        <?php 
+        echo substr($z, -5, 4);
+        ?>
+        <h2>Negative Length</h2>
+        <p>Use <i>negative length</i> to specify how many characters to omit, startign from the end of the string:</p>
+        <h5>Example</h5>
+        <p>Get the characters starting from the "W" in "World"(index 5) and continue until 3 characters from the end.</p>
+        <?php 
+        echo substr($z, 5, -3);
+        ?>
+    </section>
+
+    <section>
+
+    </section>
 </body>
 </html>
