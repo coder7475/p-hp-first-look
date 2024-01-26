@@ -86,10 +86,11 @@
         <p>A float is a number with a decimal point or a number in exponential form.</p>
         <p>2.0, 256.4, 10.358, 7.64E+5, 5.56E-5 are all floats.</p>
         <p>
-        The float data type can commonly store a value up to 1.7976931348623E+308 (platform dependent), and have a maximum precision of 14 digits.
+            The float data type can commonly store a value up to 1.7976931348623E+308 (platform dependent), and have a
+            maximum precision of 14 digits.
         </p>
         <p>
-        PHP has the following predefined constants for floats (from PHP 7.2):
+            PHP has the following predefined constants for floats (from PHP 7.2):
         </p>
         <ul>
             <li>
@@ -99,22 +100,24 @@
                 <strong>PHP_FLOAT_MIN</strong> - The smallest representable floating point number
             </li>
             <li>
-                <strong>PHP_FLOAT_DIG</strong> - The number of decimal digits that can be rounded into a float and back without precision loss
+                <strong>PHP_FLOAT_DIG</strong> - The number of decimal digits that can be rounded into a float and back
+                without precision loss
             </li>
             <li>
-                <strong>PHP_FLOAT_EPSILON</strong> - The smallest representable positive number x, so that x + 1.0 != 1.0
+                <strong>PHP_FLOAT_EPSILON</strong> - The smallest representable positive number x, so that x + 1.0 !=
+                1.0
             </li>
         </ul>
         <p>PHP has the following functions to check if the type of a variable is float:</p>
         <ul>
             <li>
-                <strong>is_float()</strong> 
+                <strong>is_float()</strong>
             </li>
             <li>
                 <strong>is_double()</strong> - alias of is_float()
             </li>
         </ul>
-        <?php 
+        <?php
         echo PHP_FLOAT_DIG;
         echo "<br>";
         echo PHP_FLOAT_EPSILON;
@@ -123,7 +126,26 @@
         var_dump(is_float($x));
         ?>
     </section>
-
+    <section>
+        <h2>PHP Infinity</h2>
+        <p>A numeric value that is larger than PHP_FLOAT_MAX is considered infinite.</p>
+        <p>Check whether a numeric value
+             is finite or infinite: returns 1 if true
+        </p>
+        <ul>
+            <li>is_finite()</li>
+            <li>is_infinite()</li>
+        </ul>
+        <p>
+            <strong>var_dump()</strong>function returns the data type and value:
+        </p>
+        <?php 
+        $x = 1.9e411;
+        var_dump($x);
+        echo is_finite($x) . "<br>";;
+        echo is_infinite($x) . "<br>";;
+        ?>
+    </section>
 </body>
 
 </html>
